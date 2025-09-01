@@ -1,15 +1,15 @@
 {
   "is": "system",
   "title": "Gateway",
-  "permalink": "https://google.com/affected/gateway/",
+  "permalink": "http://localhost:1313/affected/gateway/",
   "status": "ok", 
   "pages": [
       {
         "is": "issue",
         "title": "IPSec Connections",
         "createdAt": "2018-04-25 04:13:00 +0000 UTC",
-        "lastMod": "2019-12-21 21:27:28 +0200 +0200",
-        "permalink": "https://google.com/issues/2018-05-25-us-east-conn-issues/",
+        "lastMod": "2025-09-01 15:44:55 +0530 IST",
+        "permalink": "http://localhost:1313/issues/2018-05-25-us-east-conn-issues/",
         "severity": "fixed",
         "resolved": true,
         "informational": false,

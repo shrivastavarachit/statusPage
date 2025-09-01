@@ -52,7 +52,7 @@
         "is": "issue",
         "title": "Tekion IT Maintenance Announcement",
         "createdAt": "2024-02-24 10:35:00 +0000 UTC",
-        "lastMod": "2021-10-10 17:02:38 +0300 +0300",
+        "lastMod": "2025-09-01 15:44:55 +0530 IST",
         "permalink": "http://localhost:1313/issues/2024-02-24-maintenance-window/",
         "affected": [],
         "filename": "2024-02-24-maintenance-window.md"
@@ -169,7 +169,7 @@
   ],
 
   "buildDate": "2025-09-01",
-  "buildTime": "15:42",
+  "buildTime": "16:29",
   "buildTimezone": "IST",
   "colorBrand": "#00D15A",
   "colorOk": "#008000",
