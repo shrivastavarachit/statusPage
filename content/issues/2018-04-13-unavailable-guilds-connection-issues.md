@@ -17,8 +17,11 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
 ---
 
-*Update* - A fix has been implemented and we are monitoring the results. Looks like this has been fixed. {{< track "2018-04-13 17:30:00" >}}
+**Update** - *2018-04-13 17:30:00*
+A fix has been implemented and we are monitoring the results. Looks like this has been fixed.
 
-*Monitoring* - After hitting the ole reboot button Example Chat App is now recovering. We're going to continue to monitor as everyone reconnects. {{< track "2018-04-13 16:50:00" >}}
+**Monitoring** - *2018-04-13 16:50:00*
+After hitting the ole reboot button Example Chat App is now recovering. We're going to continue to monitor as everyone reconnects.
 
-*Investigating* - We're aware of users experiencing unavailable guilds and issues when attempting to connect. We're currently investigating. {{< track "2018-04-13 15:54:00" >}}
+**Investigating** - *2018-04-13 15:54:00*
+We're aware of users experiencing unavailable guilds and issues when attempting to connect. We're currently investigating.
