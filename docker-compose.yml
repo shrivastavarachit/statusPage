@@ -5,11 +5,23 @@ services:
     build: .
     container_name: tekion-status-page
     ports:
-      - "80:80"      # Status page (user side)
-      - "3001:3001"  # Admin panel
+      - "80:80"      # Nginx proxy (main access point)
+      - "1313:1313"  # Hugo server (direct access)
+      - "3001:3001"  # Admin dashboard (direct access)
     volumes:
-      - ./content:/app/content
       - ./data:/app/data
+      - ./content:/app/content
+      - ./static:/app/static
+      - ./layouts:/app/layouts
     environment:
+      - HUGO_ENV=production
+      - NODE_ENV=production
+      - HUGO_BASEURL=http://localhost
       - TZ=Asia/Kolkata
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "sh", "-c", "curl -f http://localhost/health && curl -f http://localhost:1313 && curl -f http://localhost:3001"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
