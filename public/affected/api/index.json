@@ -1,16 +1,30 @@
 {
   "is": "system",
   "title": "API",
-  "permalink": "http://localhost:1313/affected/api/",
+  "permalink": "https://google.com/affected/api/",
   "status": "ok", 
   "pages": [
       {
         "is": "issue",
-        "title": "New Pipeline Rollout",
+        "title": "Resolved issues",
+        "createdAt": "2024-12-17 17:24:00 +0000 UTC",
+        "lastMod": "2024-12-17 17:24:00 +0000 UTC",
+        "permalink": "https://google.com/issues/resolved-issues/",
+        "severity": "disrupted",
+        "resolved": true,
+        "informational": true,
+        "resolvedAt": "2024-12-17 17:42:00",
+        "affected": ["API"],
+        "filename": "resolved-issues.md"
+      }
+    ,
+      {
+        "is": "issue",
+        "title": "New Implementations",
         "createdAt": "2019-10-05 16:24:00 +0000 UTC",
         "lastMod": "2021-04-17 14:19:08 +0300 +0300",
-        "permalink": "http://localhost:1313/issues/2019-10-08-testing-new-pipeline/",
-        "severity": "disrupted",
+        "permalink": "https://google.com/issues/2019-10-08-testing-new-pipeline/",
+        "severity": "fixed",
         "resolved": true,
         "informational": false,
         "resolvedAt": "2019-10-05 16:58:00",
@@ -20,11 +34,11 @@
     ,
       {
         "is": "issue",
-        "title": "US East Connection Issues",
+        "title": "IPSec Connections",
         "createdAt": "2018-04-25 04:13:00 +0000 UTC",
         "lastMod": "2019-12-21 21:27:28 +0200 +0200",
-        "permalink": "http://localhost:1313/issues/2018-05-25-us-east-conn-issues/",
-        "severity": "down",
+        "permalink": "https://google.com/issues/2018-05-25-us-east-conn-issues/",
+        "severity": "fixed",
         "resolved": true,
         "informational": false,
         "resolvedAt": "2018-04-25 04:13:59",
@@ -35,9 +49,9 @@
       {
         "is": "issue",
         "title": "Unavailable Guilds & Connection Issues",
-        "createdAt": "2018-04-13 15:54:00 +0000 UTC",
+        "createdAt": "2018-04-14 15:54:00 +0000 UTC",
         "lastMod": "2020-02-29 19:16:59 +0200 +0200",
-        "permalink": "http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/",
+        "permalink": "https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/",
         "severity": "down",
         "resolved": true,
         "informational": false,
@@ -49,13 +63,13 @@
       {
         "is": "issue",
         "title": "Issues Sending DMs",
-        "createdAt": "2017-12-17 16:24:00 +0000 UTC",
+        "createdAt": "2017-12-17 17:24:00 +0000 UTC",
         "lastMod": "2019-12-21 21:27:28 +0200 +0200",
-        "permalink": "http://localhost:1313/issues/2018-01-17-sending-dms-impacted/",
+        "permalink": "https://google.com/issues/2018-01-17-sending-dms-impacted/",
         "severity": "disrupted",
         "resolved": true,
         "informational": false,
-        "resolvedAt": "2017-12-17 16:58:00",
+        "resolvedAt": "2017-12-17 17:58:00",
         "affected": ["API"],
         "filename": "2018-01-17-sending-dms-impacted.md"
       }

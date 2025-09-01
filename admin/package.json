@@ -1,0 +1,13 @@
+{
+  "name": "tekion-status-admin",
+  "version": "1.0.0",
+  "description": "Local admin dashboard for Tekion IT Status Page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["status-page", "admin", "tekion"],
+  "author": "Tekion IT Team",
+  "license": "MIT"
+}

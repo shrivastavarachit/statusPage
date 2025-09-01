@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <link rel="alternate" type="text/html" href="http://localhost:1313/"/>
-    <title>Media Proxy on Eggsample Status</title>
-    <link>http://localhost:1313/affected/media-proxy/</link>
+    <link rel="alternate" type="text/html" href="https://google.com/"/>
+    <title>Media Proxy on Tekion IT Status Page</title>
+    <link>https://google.com/affected/media-proxy/</link>
     <description>Incident history</description>
     <generator>github.com/cstate</generator>
     <language>en</language>
@@ -13,14 +13,14 @@
     
     
     
-      <atom:link href="http://localhost:1313/affected/media-proxy/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://google.com/affected/media-proxy/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
-        <title>[Resolved] US East Connection Issues</title>
-        <link>http://localhost:1313/issues/2018-05-25-us-east-conn-issues/</link>
+        <title>[Resolved] IPSec Connections</title>
+        <link>https://google.com/issues/2018-05-25-us-east-conn-issues/</link>
         <pubDate>Wed, 25 Apr 2018 04:13:00 +0000</pubDate>
-        <guid>http://localhost:1313/issues/2018-05-25-us-east-conn-issues/</guid>
+        <guid>https://google.com/issues/2018-05-25-us-east-conn-issues/</guid>
         <category>2018-04-25 04:13:59</category>
         <description>&lt;p&gt;&lt;em&gt;Resolved&lt;/em&gt; -
 We believe all users experiencing issues have been able to connect at this time. 
@@ -53,9 +53,9 @@ We believe all users experiencing issues have been able to connect at this time.
     
       <item>
         <title>[Resolved] Unavailable Guilds &amp; Connection Issues</title>
-        <link>http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/</link>
-        <pubDate>Fri, 13 Apr 2018 15:54:00 +0000</pubDate>
-        <guid>http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/</guid>
+        <link>https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/</link>
+        <pubDate>Sat, 14 Apr 2018 15:54:00 +0000</pubDate>
+        <guid>https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/</guid>
         <category>2018-04-13 17:30:00</category>
         <description>&lt;p&gt;&lt;em&gt;Post-mortem&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by our API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way our API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Example Chat App’s real time system. These issues caused enough critical impact that Example Chat App’s engineering team was forced to fully restart the service, reconnecting millions of clients over a period of 20 minutes.&lt;/p&gt;</description>

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  tekion-status:
+    build: .
+    container_name: tekion-status-page
+    ports:
+      - "80:80"      # Status page (user side)
+      - "3001:3001"  # Admin panel
+    volumes:
+      - ./content:/app/content
+      - ./data:/app/data
+    environment:
+      - TZ=Asia/Kolkata
+    restart: unless-stopped

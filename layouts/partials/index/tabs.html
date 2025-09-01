@@ -1,0 +1,89 @@
+{{ if .Site.Params.customTabs }}
+  <div class="tabs">
+    <div class="contain tabs--inner">
+      <a href="#incidents" class="tab tab--current" onclick="showTab('incidents', this)">
+        {{ T "incidents" }}
+      </a>
+
+      {{ range .Site.Params.customTabs }}
+        <a href="{{ .link }}" class="tab tab--other" onclick="showTab('{{ .widget }}', this)">
+          {{ .name }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- Include custom tab content (hidden by default) -->
+  {{ range .Site.Params.customTabs }}
+    {{ if .widget }}
+      {{ partial (printf "index/%s" .widget) $ }}
+    {{ end }}
+  {{ end }}
+
+  <!-- JavaScript for tab switching -->
+  <script>
+    function showTab(tabId, element) {
+      console.log('showTab called with tabId:', tabId);
+
+      // Hide all tab content
+      var tabContents = document.querySelectorAll('.tab-content');
+      console.log('Found tab contents:', tabContents.length);
+      tabContents.forEach(function(content) {
+        content.style.display = 'none';
+      });
+
+      // Hide/show incidents section
+      var incidentsSection = document.getElementById('incidents');
+      if (tabId === 'incidents') {
+        if (incidentsSection) {
+          incidentsSection.style.display = 'block';
+        }
+      } else {
+        if (incidentsSection) {
+          incidentsSection.style.display = 'none';
+        }
+      }
+
+      // Remove current class from all tabs
+      var tabs = document.querySelectorAll('.tab');
+      tabs.forEach(function(tab) {
+        tab.classList.remove('tab--current');
+        tab.classList.add('tab--other');
+      });
+
+      // Show selected tab content
+      var selectedTab = document.getElementById(tabId);
+      console.log('Looking for tab with ID:', tabId, 'Found:', selectedTab);
+      if (selectedTab) {
+        selectedTab.style.display = 'block';
+        console.log('Showing tab:', tabId);
+      } else {
+        console.log('Tab not found:', tabId);
+      }
+
+      // Add current class to clicked tab
+      element.classList.remove('tab--other');
+      element.classList.add('tab--current');
+
+      // Prevent default link behavior
+      return false;
+    }
+
+    // Initialize tabs on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Show incidents tab by default
+      var incidentsTab = document.querySelector('a[href="#incidents"]');
+      if (incidentsTab) {
+        showTab('incidents', incidentsTab);
+      }
+    });
+  </script>
+
+{{ else }}
+  {{ if not .Site.Params.disableIncidentHistory }}
+    <div class="contain contain--more">
+      <h2 class="center">{{ T "incidentHistory" }}</h2>
+      <hr class="clean">
+    </div>
+  {{ end }}
+{{ end }}

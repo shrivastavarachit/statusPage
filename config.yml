@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: Tekion IT Status Page
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -97,7 +97,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: https://google.com
 
 # For features like Last modified, you
 # need to use a Git repository. If you
@@ -143,12 +143,28 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
+    - name: Offices
+      description: Check here for Operational status of our Offices.
       closed: true
-    - name: Empty Category
-    - name: Uncategorized
-      untitled: true
+
+    - name: URLs/Websites
+      description: Check here for Operational status of our URLs and Websites.
+      closed: true
+
+    - name: IT Cloud Infrastructure
+      description: Check here for Operational status of IT Cloud Infrastructure
+      closed: true
+      untitled: false
+
+    - name: IT Internal
+      description: Check here for Operational status of IT Internal.
+      closed: true
+      untitled: false
+
+    - name: Corp Apps Services
+      description: Check here for Operational status of Corp Apps Services.
+      closed: true
+      untitled: false
 
   # These are your systems. Change them to
   # change the amount of components.
@@ -158,20 +174,42 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
+    #Offices
+    - name: Bangalore ISP Tata Comms
+      category: Offices
+    - name: Bangalore ISP Tata Tele
+      category: Offices
+    - name: Bangalore ISP Airtel
+      category: Offices
+
+    # Websites/URLs
+
+    - name: Tekion Official Website
+      category: URLs/Websites
+      link: https://tekion.com/
+
+    - name: IT Helpdesk
+      category: URLs/Websites
+      link: https://helpdesk.tekion.com/
+
+    - name: Corp VPN
+      category: URLs/Websites
+      link: https://vpn.tekion.com/
+
+    # Corp Apps  
+
     - name: API
       description: The guts of the application.
-      category: Uncategorized
+      category: Corp Apps Services
     - name: Media Proxy
       description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+      category: Corp Apps Services
+    - name: Gateway
+      description: Gateway service for handling connections.
+      category: Corp Apps Services
+
+    - name: ISP
+      category: Offices
 
   # What date format to use?
   #
@@ -286,22 +324,30 @@ params:
   #
   # Recommended: png, bmp, jpg, or gif
   # for best browser support!
-  logo: logo.png
+  logo: tekionlogo.png
 
   # This is the description that is shown
   # on the footer and meta tags.
   #
   # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
-  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+  description: We are Tekion IT, continuously monitoring all our systems Globally.
 
   # Tabs on homepage
   # Uncomment to enable.
   #
   # Format:
-  # customTabs:
-  #  -
-  #    name: Name
-  #    link: https://example.com
+  customTabs:
+    -
+      name: SLA
+      link: "#sla"
+      widget: sla
+      required: true
+
+    -
+      name: Security
+      link: "#security"
+      widget: security
+      required: true
 
   # Disable complex server-side
   # calculations that may impact
@@ -319,7 +365,7 @@ params:
   # in one page
   #
   # NUMERIC; Default: `10`
-  incidentPostsPerPage: 10
+  incidentPostsPerPage: 5
 
   # Colors throughout cState
   #
@@ -333,7 +379,7 @@ params:
   # disrupted: "#cc4400"
   # down: "#e60000"
   # notice: "#24478f"
-  brand: "#0a0c0f"
+  brand: "#00D15A"
   ok: "#008000"
   disrupted: "#cc4400"
   down: "#e60000"

@@ -1,0 +1,37 @@
+<div id="security" class="tab-content" style="display: none;">
+  <div class="contain contain--more">
+    <h2 class="center">Security Information</h2>
+    <hr class="clean">
+  </div>
+
+  {{ $securityPages := where .Site.RegularPages "Params.section" "Security" }}
+
+  <div class="contain contain--more">
+
+    <!-- Hardcoded SecInfo entry for testing -->
+    <div class="incident incident--small">
+      <div class="incident__title">
+        <h3>
+          <a href="/security/secinfo/">SecInfo</a>
+        </h3>
+      </div>
+
+      <div class="incident__body">
+        <p><em>Update</em> - All security systems are operational and monitoring is active.</p>
+      </div>
+
+      <div class="incident__meta">
+        <small>
+          <strong>Updated:</strong> August 18, 2024
+        </small>
+      </div>
+    </div>
+
+    <!-- Dynamic content from files -->
+    {{ range $securityPages.ByDate.Reverse }}
+      {{ .Render "small" }}
+    {{ end }}
+
+    <div class="padding"></div>
+  </div>
+</div>

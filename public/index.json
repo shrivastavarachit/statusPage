@@ -2,30 +2,46 @@
   "is": "index",
   "cStateVersion": "6.0.1",
   "apiVersion": "2.0",
-  "title": "Eggsample Status",
+  "title": "Tekion IT Status Page",
   "languageCodeHTML": "en",
   "languageCode": "en",
   "baseURL": "http://localhost:1313/",
-  "description": "We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.",
+  "description": "We are Tekion IT, continuously monitoring all our systems Globally.",
   "summaryStatus": "ok",
   "categories": [
       {
-        "name": "North Coast",
-        "description": "The main servers are located here.",
+        "name": "Offices",
+        "description": "Check here for Operational status of our Offices.",
         "hideTitle": false,
         "closedByDefault": true
       }
     ,
       {
-        "name": "Empty Category",
+        "name": "URLs/Websites",
+        "description": "Check here for Operational status of our URLs and Websites.",
         "hideTitle": false,
-        "closedByDefault": false
+        "closedByDefault": true
       }
     ,
       {
-        "name": "Uncategorized",
-        "hideTitle": true,
-        "closedByDefault": false
+        "name": "IT Cloud Infrastructure",
+        "description": "Check here for Operational status of IT Cloud Infrastructure",
+        "hideTitle": false,
+        "closedByDefault": true
+      }
+    ,
+      {
+        "name": "IT Internal",
+        "description": "Check here for Operational status of IT Internal.",
+        "hideTitle": false,
+        "closedByDefault": true
+      }
+    ,
+      {
+        "name": "Corp Apps Services",
+        "description": "Check here for Operational status of Corp Apps Services.",
+        "hideTitle": false,
+        "closedByDefault": true
       }
     
   ],
@@ -34,7 +50,7 @@
   "pinnedIssues": [
       {
         "is": "issue",
-        "title": "Maintenance Announcement",
+        "title": "Tekion IT Maintenance Announcement",
         "createdAt": "2024-02-24 10:35:00 +0000 UTC",
         "lastMod": "2021-10-10 17:02:38 +0300 +0300",
         "permalink": "http://localhost:1313/issues/2024-02-24-maintenance-window/",
@@ -45,8 +61,8 @@
   "systems": [
     
       {
-        "name": "Gateway",
-        "category": "North Coast",
+        "name": "Bangalore ISP Tata Comms",
+        "category": "Offices",
         
         "status": "ok",
         
@@ -54,8 +70,8 @@
         
       },
       {
-        "name": "Backup Gateway",
-        "category": "North Coast",
+        "name": "Bangalore ISP Tata Tele",
+        "category": "Offices",
         
         "status": "ok",
         
@@ -63,9 +79,35 @@
         
       },
       {
-        "name": "Website",
-        "description": "The web frontend for the application.",
-        "category": "Uncategorized",
+        "name": "Bangalore ISP Airtel",
+        "category": "Offices",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Tekion Official Website",
+        "category": "URLs/Websites",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "IT Helpdesk",
+        "category": "URLs/Websites",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Corp VPN",
+        "category": "URLs/Websites",
         
         "status": "ok",
         
@@ -75,7 +117,7 @@
       {
         "name": "API",
         "description": "The guts of the application.",
-        "category": "Uncategorized",
+        "category": "Corp Apps Services",
         
         "status": "ok",
         
@@ -85,7 +127,26 @@
       {
         "name": "Media Proxy",
         "description": "This is the service responsible for serving images, audio, and video. It is reliant on our CDN.",
-        "category": "Uncategorized",
+        "category": "Corp Apps Services",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Gateway",
+        "description": "Gateway service for handling connections.",
+        "category": "Corp Apps Services",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "ISP",
+        "category": "Offices",
         
         "status": "ok",
         
@@ -94,16 +155,28 @@
       }
   ],
   
+  "tabs": [
+      {
+        "name": "SLA",
+        "link": "<no value>"
+      }
+    ,
+      {
+        "name": "Security",
+        "link": "<no value>"
+      }
+    
+  ],
 
-  "buildDate": "2025-08-06",
-  "buildTime": "16:05",
+  "buildDate": "2025-09-01",
+  "buildTime": "15:42",
   "buildTimezone": "IST",
-  "colorBrand": "#0a0c0f",
+  "colorBrand": "#00D15A",
   "colorOk": "#008000",
   "colorDisrupted": "#cc4400",
   "colorDown": "#e60000",
   "colorNotice": "#24478f",
   "alwaysKeepBrandColor": "true",
-  "logo": "http://localhost:1313/logo.png",
+  "logo": "http://localhost:1313/tekionlogo.png",
   "googleAnalytics": "UA-00000000-1"
 }

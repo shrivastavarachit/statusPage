@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "name": "Bangalore ISP Tata Comms",
+      "status": "disrupted",
+      "category": "Offices",
+      "lastUpdated": "2025-09-01T10:05:33.000Z"
+    },
+    {
+      "name": "Bangalore ISP Tata Tele",
+      "status": "operational",
+      "category": "Offices",
+      "lastUpdated": "2024-08-18T10:00:00Z"
+    },
+    {
+      "name": "Bangalore ISP Airtel",
+      "status": "operational",
+      "category": "Offices",
+      "lastUpdated": "2024-08-18T10:00:00Z"
+    },
+    {
+      "name": "Corp VPN",
+      "status": "operational",
+      "category": "URLs/Websites",
+      "lastUpdated": "2024-08-18T10:00:00Z"
+    },
+    {
+      "name": "API",
+      "status": "operational",
+      "category": "Corp Apps Services",
+      "lastUpdated": "2024-08-18T10:00:00Z"
+    },
+    {
+      "name": "Media Proxy",
+      "status": "operational",
+      "category": "Corp Apps Services",
+      "lastUpdated": "2025-09-01T09:46:50.251Z"
+    }
+  ]
+}

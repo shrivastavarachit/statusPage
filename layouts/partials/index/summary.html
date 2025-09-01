@@ -1,0 +1,241 @@
+{{ $incidents := where .Site.RegularPages "Params.section" "issue" }}
+{{ $active := where $incidents "Params.resolved" "=" false }}
+
+{{ $isNotice := where $active "Params.severity" "=" "notice" }}
+{{ $isDisrupted := where $active "Params.severity" "=" "disrupted" }}
+{{ $isDown := where $active "Params.severity" "=" "down" }}
+
+<div class="tekion-hero">
+  <div class="hero-content">
+
+    <div class="hero-description">
+      <h2>Welcome to Tekion's status page</h2>
+      <p>Below you'll find status information for each of Tekion's products and services.</p>
+    </div>
+
+    <div class="hero-status">
+      <div class="status-indicator {{ if $isDown }}status-down{{ else if $isDisrupted }}status-disrupted{{ else if $isNotice }}status-notice{{ else }}status-operational{{ end }}">
+        <div class="status-icon">
+          {{ if $isDown }}
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"/>
+            </svg>
+          {{ else if $isDisrupted }}
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"/>
+            </svg>
+          {{ else if $isNotice }}
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"/>
+            </svg>
+          {{ else }}
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+            </svg>
+          {{ end }}
+        </div>
+        <div class="status-text">
+          <strong>
+            {{ if $isDown }}
+              Major Service Outage
+            {{ else if $isDisrupted }}
+              Partial Service Disruption
+            {{ else if $isNotice }}
+              Service Notice
+            {{ else }}
+              All Systems Operational
+            {{ end }}
+          </strong>
+          <div class="status-subtitle">
+            {{ if $isDown }}
+              We are experiencing significant issues with our services
+            {{ else if $isDisrupted }}
+              Some services may be experiencing issues
+            {{ else if $isNotice }}
+              There are notices regarding our services
+            {{ else }}
+              All services are running normally
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+      <div class="last-updated">
+        Last updated: <span class="relative-time" data-time-prefix="">{{ now.Format "Jan 2, 2006 at 3:04 PM MST" }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Override theme's status-based background colors */
+.status-ok .tekion-hero,
+.status-disrupted .tekion-hero,
+.status-down .tekion-hero,
+.status-notice .tekion-hero {
+  background: #ffffff !important;
+  box-shadow: none !important;
+}
+
+.tekion-hero {
+  background: #ffffff;
+  color: #333;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+
+
+
+.hero-description {
+  margin-bottom: 1.5rem;
+}
+
+.hero-description h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.hero-description p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Override theme's status-based colors for our status card */
+.status-ok .hero-status,
+.status-disrupted .hero-status,
+.status-down .hero-status,
+.status-notice .hero-status {
+  background: #f8f9fa !important;
+  box-shadow: none !important;
+}
+
+.hero-status {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.status-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.status-operational .status-icon {
+  background: #10B981;
+  color: white;
+}
+
+.status-disrupted .status-icon {
+  background: #F59E0B;
+  color: white;
+}
+
+.status-down .status-icon {
+  background: #EF4444;
+  color: white;
+}
+
+.status-notice .status-icon {
+  background: #3B82F6;
+  color: white;
+}
+
+.status-text strong {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.status-subtitle {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.last-updated {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.relative-time {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .tekion-hero {
+    padding: 2rem 0;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+
+
+  .hero-description h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero-description p {
+    font-size: 1rem;
+  }
+
+  .status-indicator {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .status-text strong {
+    font-size: 1.1rem;
+  }
+
+  .hero-status {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-description h2 {
+    font-size: 1.1rem;
+  }
+
+  .status-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+</style>

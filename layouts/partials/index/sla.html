@@ -1,0 +1,45 @@
+<div id="sla" class="tab-content" style="display: none;">
+  <div class="contain contain--more">
+    <h2 class="center">Service Level Agreements</h2>
+    <hr class="clean">
+  </div>
+
+  {{ $slaPages := where .Site.RegularPages "Params.section" "sla" }}
+
+  {{ if not $slaPages }}
+    <div class="padding"></div>
+    <h3>No SLA documents available</h3>
+    <p>SLA documents will be displayed here when available.</p>
+    <div class="padding"></div>
+  {{ else }}
+    <div class="contain contain--more">
+      {{ range $slaPages.ByDate.Reverse }}
+        <div class="incident">
+          <div class="incident__title">
+            <h3>
+              {{ .Title }}
+              {{ if .Params.target }}
+                <span class="badge badge--ok">Target: {{ .Params.target }}</span>
+              {{ end }}
+              {{ if .Params.category }}
+                <span class="badge badge--notice">{{ .Params.category }}</span>
+              {{ end }}
+            </h3>
+          </div>
+
+          <div class="incident__body">
+            <div class="incident__timestamp">
+              <small>{{ .Date.Format "January 2, 2006 at 3:04 PM UTC" }}</small>
+            </div>
+
+            <div class="incident__content">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        <hr>
+      {{ end }}
+      <div class="padding"></div>
+    </div>
+  {{ end }}
+</div>

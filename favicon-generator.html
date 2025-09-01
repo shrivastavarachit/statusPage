@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tekion Favicon Generator</title>
+</head>
+<body>
+    <h1>Tekion Favicon Generator</h1>
+    
+    <!-- 16x16 Canvas -->
+    <h3>16x16 Favicon</h3>
+    <canvas id="favicon16" width="16" height="16" style="border: 1px solid #ccc; image-rendering: pixelated; width: 160px; height: 160px;"></canvas>
+    <br><button onclick="download16()">Download 16x16 PNG</button>
+    
+    <!-- 32x32 Canvas -->
+    <h3>32x32 Favicon</h3>
+    <canvas id="favicon32" width="32" height="32" style="border: 1px solid #ccc; image-rendering: pixelated; width: 160px; height: 160px;"></canvas>
+    <br><button onclick="download32()">Download 32x32 PNG</button>
+    
+    <!-- 48x48 Canvas for ICO -->
+    <h3>48x48 Favicon (for ICO)</h3>
+    <canvas id="favicon48" width="48" height="48" style="border: 1px solid #ccc; image-rendering: pixelated; width: 160px; height: 160px;"></canvas>
+    <br><button onclick="download48()">Download 48x48 PNG</button>
+
+    <script>
+        // Tekion green color
+        const tekionGreen = '#00D15A';
+        
+        function drawFavicon(canvas, size) {
+            const ctx = canvas.getContext('2d');
+            
+            // Fill background with Tekion green
+            ctx.fillStyle = tekionGreen;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Draw white "T"
+            ctx.fillStyle = 'white';
+            ctx.font = `bold ${Math.floor(size * 0.7)}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('T', size/2, size/2);
+        }
+        
+        function downloadCanvas(canvas, filename) {
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        function download16() {
+            downloadCanvas(document.getElementById('favicon16'), 'favicon-16x16.png');
+        }
+        
+        function download32() {
+            downloadCanvas(document.getElementById('favicon32'), 'favicon-32x32.png');
+        }
+        
+        function download48() {
+            downloadCanvas(document.getElementById('favicon48'), 'favicon-48x48.png');
+        }
+        
+        // Draw all favicons when page loads
+        window.onload = function() {
+            drawFavicon(document.getElementById('favicon16'), 16);
+            drawFavicon(document.getElementById('favicon32'), 32);
+            drawFavicon(document.getElementById('favicon48'), 48);
+        };
+    </script>
+    
+    <hr>
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Open this HTML file in your browser</li>
+        <li>Click each download button to get the PNG files</li>
+        <li>Copy the downloaded files to your <code>static/</code> directory</li>
+        <li>For the ICO file, use an online converter like <a href="https://convertio.co/png-ico/" target="_blank">convertio.co</a> to convert the 48x48 PNG to favicon.ico</li>
+        <li>Also copy the 32x32 PNG as <code>favicon.png</code> (general favicon)</li>
+    </ol>
+    
+    <h3>Files you need to create in static/ directory:</h3>
+    <ul>
+        <li>favicon-16x16.png</li>
+        <li>favicon-32x32.png</li>
+        <li>favicon.png (copy of 32x32)</li>
+        <li>favicon.ico (convert 48x48 PNG to ICO)</li>
+    </ul>
+</body>
+</html>
