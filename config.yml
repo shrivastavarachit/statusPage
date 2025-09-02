@@ -175,14 +175,34 @@ params:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
     #Offices
-    - name: Bangalore ISP Tata Comms
+    - name: Bangalore
       category: Offices
-    - name: Bangalore ISP Tata Tele
+    - name: Chennai
       category: Offices
-    - name: Bangalore ISP Airtel
+    - name: OAK
+      category: Offices
+    - name: CVG
+      category: Offices
+    - name: Austin
       category: Offices
 
-    # Websites/URLs
+    - name: Teams Rooms
+      category: IT Internal
+      link:
+    - name: Access Controlls
+      category: IT Internal
+    - name: Status Page
+      category: IT Internal  
+
+    - name: Nginx Servers
+      category: IT Cloud Infrastructure
+      link:
+    - name: Nagios India Servers
+      category: IT Cloud Infrastructure
+      link:
+    - name: Nagios US Servers
+      category: IT Cloud Infrastructure
+      link:
 
     - name: Tekion Official Website
       category: URLs/Websites
@@ -198,18 +218,17 @@ params:
 
     # Corp Apps  
 
-    - name: API
+    - name: Jira
       description: The guts of the application.
       category: Corp Apps Services
-    - name: Media Proxy
+    - name: Confluence
       description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
       category: Corp Apps Services
     - name: Gateway
       description: Gateway service for handling connections.
       category: Corp Apps Services
 
-    - name: ISP
-      category: Offices
+    
 
   # What date format to use?
   #

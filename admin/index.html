@@ -177,6 +177,31 @@
             grid-column: 1 / -1;
         }
 
+        .form-text {
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        .text-success {
+            color: #28a745 !important;
+        }
+
+        .text-danger {
+            color: #dc3545 !important;
+        }
+
+        .text-warning {
+            color: #ffc107 !important;
+        }
+
+        .text-muted {
+            color: #6c757d !important;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
         @media (max-width: 768px) {
             .dashboard-grid {
                 grid-template-columns: 1fr;
@@ -219,17 +244,38 @@
                     <div class="form-group">
                         <label for="affectedServices">Affected Services</label>
                         <select id="affectedServices" class="form-control" multiple>
-                            <option value="Bangalore ISP Tata Comms">Bangalore ISP Tata Comms</option>
-                            <option value="Bangalore ISP Tata Tele">Bangalore ISP Tata Tele</option>
-                            <option value="Bangalore ISP Airtel">Bangalore ISP Airtel</option>
-                            <option value="Corp VPN">Corp VPN</option>
-                            <option value="API">API Services</option>
-                            <option value="Media Proxy">Media Proxy</option>
+                            <optgroup label="Offices">
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="OAK">OAK</option>
+                                <option value="CVG">CVG</option>
+                                <option value="Austin">Austin</option>
+                            </optgroup>
+                            <optgroup label="IT Internal">
+                                <option value="Corp VPN">Corp VPN</option>
+                                <option value="Teams Rooms">Teams Rooms</option>
+                                <option value="Access Controlls">Access Controlls</option>
+                                <option value="Status Page">Status Page</option>
+                            </optgroup>
+                            <optgroup label="IT Cloud Infrastructure">
+                                <option value="Nginx Servers">Nginx Servers</option>
+                                <option value="Nagios India Servers">Nagios India Servers</option>
+                                <option value="Nagios US Servers">Nagios US Servers</option>
+                                <option value="Jira">Jira</option>
+                                <option value="Confluence">Confluence</option>
+                            </optgroup>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="incidentDescription">Description</label>
                         <textarea id="incidentDescription" class="form-control" rows="3" placeholder="Describe the incident..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="createJiraTicket" checked>
+                            Create Jira ticket automatically
+                        </label>
+                        <small class="form-text text-muted" id="jiraStatus">Checking Jira connection...</small>
                     </div>
                     <button type="submit" class="btn btn-primary">Create Incident</button>
                 </form>

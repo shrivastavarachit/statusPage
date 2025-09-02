@@ -5,7 +5,7 @@
   "title": "Tekion IT Status Page",
   "languageCodeHTML": "en",
   "languageCode": "en",
-  "baseURL": "http://localhost:1313/",
+  "baseURL": "https://google.com/",
   "description": "We are Tekion IT, continuously monitoring all our systems Globally.",
   "summaryStatus": "ok",
   "categories": [
@@ -53,7 +53,7 @@
         "title": "Tekion IT Maintenance Announcement",
         "createdAt": "2024-02-24 10:35:00 +0000 UTC",
         "lastMod": "2025-09-01 15:44:55 +0530 IST",
-        "permalink": "http://localhost:1313/issues/2024-02-24-maintenance-window/",
+        "permalink": "https://google.com/issues/2024-02-24-maintenance-window/",
         "affected": [],
         "filename": "2024-02-24-maintenance-window.md"
       }
@@ -61,7 +61,7 @@
   "systems": [
     
       {
-        "name": "Bangalore ISP Tata Comms",
+        "name": "Bangalore",
         "category": "Offices",
         
         "status": "ok",
@@ -70,7 +70,7 @@
         
       },
       {
-        "name": "Bangalore ISP Tata Tele",
+        "name": "Chennai",
         "category": "Offices",
         
         "status": "ok",
@@ -79,8 +79,80 @@
         
       },
       {
-        "name": "Bangalore ISP Airtel",
+        "name": "OAK",
         "category": "Offices",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "CVG",
+        "category": "Offices",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Austin",
+        "category": "Offices",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Teams Rooms",
+        "category": "IT Internal",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Access Controlls",
+        "category": "IT Internal",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Status Page",
+        "category": "IT Internal",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Nginx Servers",
+        "category": "IT Cloud Infrastructure",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Nagios India Servers",
+        "category": "IT Cloud Infrastructure",
+        
+        "status": "ok",
+        
+        "unresolvedIssues": []
+        
+      },
+      {
+        "name": "Nagios US Servers",
+        "category": "IT Cloud Infrastructure",
         
         "status": "ok",
         
@@ -115,7 +187,7 @@
         
       },
       {
-        "name": "API",
+        "name": "Jira",
         "description": "The guts of the application.",
         "category": "Corp Apps Services",
         
@@ -125,7 +197,7 @@
         
       },
       {
-        "name": "Media Proxy",
+        "name": "Confluence",
         "description": "This is the service responsible for serving images, audio, and video. It is reliant on our CDN.",
         "category": "Corp Apps Services",
         
@@ -138,15 +210,6 @@
         "name": "Gateway",
         "description": "Gateway service for handling connections.",
         "category": "Corp Apps Services",
-        
-        "status": "ok",
-        
-        "unresolvedIssues": []
-        
-      },
-      {
-        "name": "ISP",
-        "category": "Offices",
         
         "status": "ok",
         
@@ -168,8 +231,8 @@
     
   ],
 
-  "buildDate": "2025-09-01",
-  "buildTime": "16:29",
+  "buildDate": "2025-09-02",
+  "buildTime": "16:04",
   "buildTimezone": "IST",
   "colorBrand": "#00D15A",
   "colorOk": "#008000",
@@ -177,6 +240,6 @@
   "colorDown": "#e60000",
   "colorNotice": "#24478f",
   "alwaysKeepBrandColor": "true",
-  "logo": "http://localhost:1313/tekionlogo.png",
+  "logo": "https://google.com/tekionlogo.png",
   "googleAnalytics": "UA-00000000-1"
 }

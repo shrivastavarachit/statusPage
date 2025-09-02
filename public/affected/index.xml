@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <link rel="alternate" type="text/html" href="http://localhost:1313/"/>
+    <link rel="alternate" type="text/html" href="https://google.com/"/>
     <title>Affected on Tekion IT Status Page</title>
-    <link>http://localhost:1313/affected/</link>
+    <link>https://google.com/affected/</link>
     <description>Incident history</description>
     <generator>github.com/cstate</generator>
     <language>en</language>
     
-    <lastBuildDate>2025-09-01T10:06:13+00:00</lastBuildDate>
-    <updated>2025-09-01T10:06:13+00:00</updated>
+    <lastBuildDate>2025-09-02T07:37:33+00:00</lastBuildDate>
+    <updated>2025-09-02T07:37:33+00:00</updated>
     
     
     
-      <atom:link href="http://localhost:1313/affected/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://google.com/affected/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
+        <title>Bangalore</title>
+        <link>https://google.com/affected/bangalore/</link>
+        <pubDate>Tue, 02 Sep 2025 07:37:33 +0000</pubDate>
+        <guid>https://google.com/affected/bangalore/</guid>
+        <category></category>
+        <description></description>
+        <content type="html"></content>
+      </item>
+    
+      <item>
         <title>Bangalore ISP Tata Tele</title>
-        <link>http://localhost:1313/affected/bangalore-isp-tata-tele/</link>
+        <link>https://google.com/affected/bangalore-isp-tata-tele/</link>
         <pubDate>Mon, 01 Sep 2025 10:06:13 +0000</pubDate>
-        <guid>http://localhost:1313/affected/bangalore-isp-tata-tele/</guid>
+        <guid>https://google.com/affected/bangalore-isp-tata-tele/</guid>
         <category></category>
         <description></description>
         <content type="html"></content>
@@ -28,9 +38,9 @@
     
       <item>
         <title>Corp VPN</title>
-        <link>http://localhost:1313/affected/corp-vpn/</link>
+        <link>https://google.com/affected/corp-vpn/</link>
         <pubDate>Mon, 18 Aug 2025 11:21:33 +0000</pubDate>
-        <guid>http://localhost:1313/affected/corp-vpn/</guid>
+        <guid>https://google.com/affected/corp-vpn/</guid>
         <category></category>
         <description></description>
         <content type="html"></content>
@@ -38,9 +48,9 @@
     
       <item>
         <title>Bangalore ISP Tata Comms</title>
-        <link>http://localhost:1313/affected/bangalore-isp-tata-comms/</link>
+        <link>https://google.com/affected/bangalore-isp-tata-comms/</link>
         <pubDate>Mon, 18 Aug 2025 11:20:42 +0000</pubDate>
-        <guid>http://localhost:1313/affected/bangalore-isp-tata-comms/</guid>
+        <guid>https://google.com/affected/bangalore-isp-tata-comms/</guid>
         <category></category>
         <description></description>
         <content type="html"></content>
@@ -48,9 +58,9 @@
     
       <item>
         <title>API</title>
-        <link>http://localhost:1313/affected/api/</link>
+        <link>https://google.com/affected/api/</link>
         <pubDate>Tue, 17 Dec 2024 17:24:00 +0000</pubDate>
-        <guid>http://localhost:1313/affected/api/</guid>
+        <guid>https://google.com/affected/api/</guid>
         <category></category>
         <description></description>
         <content type="html"></content>
@@ -58,9 +68,9 @@
     
       <item>
         <title>Gateway</title>
-        <link>http://localhost:1313/affected/gateway/</link>
+        <link>https://google.com/affected/gateway/</link>
         <pubDate>Wed, 25 Apr 2018 04:13:00 +0000</pubDate>
-        <guid>http://localhost:1313/affected/gateway/</guid>
+        <guid>https://google.com/affected/gateway/</guid>
         <category></category>
         <description></description>
         <content type="html"></content>
@@ -68,9 +78,9 @@
     
       <item>
         <title>Media Proxy</title>
-        <link>http://localhost:1313/affected/media-proxy/</link>
+        <link>https://google.com/affected/media-proxy/</link>
         <pubDate>Wed, 25 Apr 2018 04:13:00 +0000</pubDate>
-        <guid>http://localhost:1313/affected/media-proxy/</guid>
+        <guid>https://google.com/affected/media-proxy/</guid>
         <category></category>
         <description></description>
         <content type="html"></content>

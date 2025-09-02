@@ -1,40 +1,81 @@
 {
   "services": [
     {
-      "name": "Bangalore ISP Tata Comms",
-      "status": "disrupted",
-      "category": "Offices",
-      "lastUpdated": "2025-09-01T10:05:33.000Z"
-    },
-    {
-      "name": "Bangalore ISP Tata Tele",
+      "name": "Bangalore",
       "status": "operational",
       "category": "Offices",
-      "lastUpdated": "2024-08-18T10:00:00Z"
+      "lastUpdated": "2025-09-02T07:36:40.598Z"
     },
     {
-      "name": "Bangalore ISP Airtel",
+      "name": "Chennai",
       "status": "operational",
       "category": "Offices",
-      "lastUpdated": "2024-08-18T10:00:00Z"
+      "lastUpdated": "2025-09-02T07:03:11.959Z"
+    },
+    {
+      "name": "OAK",
+      "status": "operational",
+      "category": "Offices"
+    },
+    {
+      "name": "CVG",
+      "status": "operational",
+      "category": "Offices"
+    },
+    {
+      "name": "Austin",
+      "status": "operational",
+      "category": "Offices",
+      "lastUpdated": "2025-09-02T07:03:09.600Z"
     },
     {
       "name": "Corp VPN",
       "status": "operational",
-      "category": "URLs/Websites",
-      "lastUpdated": "2024-08-18T10:00:00Z"
+      "category": "IT Internal"
     },
     {
-      "name": "API",
+      "name": "Teams Rooms",
       "status": "operational",
-      "category": "Corp Apps Services",
-      "lastUpdated": "2024-08-18T10:00:00Z"
+      "category": "IT Internal",
+      "lastUpdated": "2025-09-02T10:34:07.557Z"
     },
     {
-      "name": "Media Proxy",
+      "name": "Access Controlls",
       "status": "operational",
-      "category": "Corp Apps Services",
-      "lastUpdated": "2025-09-01T09:46:50.251Z"
+      "category": "IT Internal"
+    },
+    {
+      "name": "Status Page",
+      "status": "operational",
+      "category": "IT Internal"
+    },
+    {
+      "name": "Nginx Servers",
+      "status": "operational",
+      "category": "IT Cloud Infrastructure",
+      "lastUpdated": "2025-09-02T07:03:10.231Z"
+    },
+    {
+      "name": "Nagios India Servers",
+      "status": "operational",
+      "category": "IT Cloud Infrastructure"
+    },
+    {
+      "name": "Nagios US Servers",
+      "status": "operational",
+      "category": "IT Cloud Infrastructure",
+      "lastUpdated": "2025-09-02T07:03:08.989Z"
+    },
+    {
+      "name": "Jira",
+      "status": "operational",
+      "category": "IT Cloud Infrastructure",
+      "lastUpdated": "2025-09-02T10:34:27.755Z"
+    },
+    {
+      "name": "Confluence",
+      "status": "operational",
+      "category": "IT Cloud Infrastructure"
     }
   ]
 }

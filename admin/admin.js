@@ -10,6 +10,7 @@ class StatusAdmin {
     async init() {
         this.bindEvents();
         await this.loadData();
+        await this.checkJiraStatus();
         this.updateDisplay();
     }
 
@@ -107,6 +108,7 @@ class StatusAdmin {
         const description = document.getElementById('incidentDescription').value;
         const affectedSelect = document.getElementById('affectedServices');
         const affected = Array.from(affectedSelect.selectedOptions).map(option => option.value);
+        const createJiraTicket = document.getElementById('createJiraTicket').checked;
 
         if (!title || !severity || !description) {
             alert('Please fill in all required fields');
@@ -123,7 +125,8 @@ class StatusAdmin {
                     title,
                     severity,
                     description,
-                    affected
+                    affected,
+                    createJiraTicket
                 })
             });
 
@@ -137,7 +140,15 @@ class StatusAdmin {
                 await this.loadData();
                 this.updateIncidentsDisplay();
 
-                this.showNotification(`Incident "${title}" created successfully. Site rebuilding...`);
+                let message = `Incident "${title}" created successfully. Site rebuilding...`;
+
+                if (result.data.jiraTicket) {
+                    message += ` Jira ticket created: ${result.data.jiraTicket.key}`;
+                } else if (result.data.jiraError) {
+                    message += ` (Jira ticket creation failed: ${result.data.jiraError})`;
+                }
+
+                this.showNotification(message);
             } else {
                 this.showNotification(`Failed to create incident: ${result.error}`, 'error');
             }
@@ -344,7 +355,48 @@ ${incident.updates ? incident.updates.map(update => `*${update.timestamp.toLocal
         element.click();
         document.body.removeChild(element);
     }
-    
+
+    async checkJiraStatus() {
+        try {
+            const response = await fetch(`${this.apiUrl}/jira/config`);
+            const configData = await response.json();
+
+            const jiraStatusElement = document.getElementById('jiraStatus');
+            const jiraCheckbox = document.getElementById('createJiraTicket');
+
+            if (configData.success && configData.data.enabled) {
+                // Test connection
+                const testResponse = await fetch(`${this.apiUrl}/jira/test`);
+                const testData = await testResponse.json();
+
+                if (testData.success && testData.data.success) {
+                    jiraStatusElement.textContent = `✅ Jira connected (${configData.data.project})`;
+                    jiraStatusElement.className = 'form-text text-success';
+                    jiraCheckbox.disabled = false;
+                } else {
+                    jiraStatusElement.textContent = `❌ Jira connection failed: ${testData.data.message}`;
+                    jiraStatusElement.className = 'form-text text-danger';
+                    jiraCheckbox.disabled = true;
+                    jiraCheckbox.checked = false;
+                }
+            } else {
+                jiraStatusElement.textContent = '⚠️ Jira integration not configured';
+                jiraStatusElement.className = 'form-text text-warning';
+                jiraCheckbox.disabled = true;
+                jiraCheckbox.checked = false;
+            }
+        } catch (error) {
+            console.error('Failed to check Jira status:', error);
+            const jiraStatusElement = document.getElementById('jiraStatus');
+            const jiraCheckbox = document.getElementById('createJiraTicket');
+
+            jiraStatusElement.textContent = '❌ Failed to check Jira status';
+            jiraStatusElement.className = 'form-text text-danger';
+            jiraCheckbox.disabled = true;
+            jiraCheckbox.checked = false;
+        }
+    }
+
     showNotification(message, type = 'success') {
         // Create notification element
         const notification = document.createElement('div');

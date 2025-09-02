@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
+const JiraIntegration = require('./jira-integration');
 
 const PORT = 3001;
 const CONTENT_DIR = '../content/issues/';
@@ -10,6 +11,7 @@ const SERVICES_FILE = '../data/services.json';
 class LocalStatusServer {
     constructor() {
         this.server = http.createServer((req, res) => this.handleRequest(req, res));
+        this.jira = new JiraIntegration();
     }
 
     start() {
@@ -94,6 +96,10 @@ class LocalStatusServer {
             this.getIncidents(res);
         } else if (path === 'services') {
             this.getServices(res);
+        } else if (path === 'jira/config') {
+            this.getJiraConfig(res);
+        } else if (path === 'jira/test') {
+            this.testJiraConnection(res);
         } else {
             this.sendError(res, 'Not found', 404);
         }
@@ -212,9 +218,9 @@ class LocalStatusServer {
         });
     }
 
-    createIncident(data, res) {
-        const { title, severity, description, affected } = data;
-        
+    async createIncident(data, res) {
+        const { title, severity, description, affected, createJiraTicket } = data;
+
         if (!title || !description) {
             this.sendError(res, 'Title and description are required');
             return;
@@ -224,16 +230,51 @@ class LocalStatusServer {
         const filename = `${date.toISOString().split('T')[0]}-${this.slugify(title)}.md`;
         const filepath = path.resolve(CONTENT_DIR, filename);
 
-        const frontMatter = `---
+        let jiraTicket = null;
+        let jiraError = null;
+
+        // Create Jira ticket if requested and integration is enabled
+        if (createJiraTicket && this.jira.enabled) {
+            console.log('🎫 Creating Jira ticket for incident...');
+            try {
+                jiraTicket = await this.jira.createTicket({
+                    title,
+                    severity: severity || 'notice',
+                    description,
+                    affected
+                });
+
+                if (jiraTicket && jiraTicket.error) {
+                    jiraError = jiraTicket.message;
+                    jiraTicket = null;
+                }
+            } catch (error) {
+                console.error('Failed to create Jira ticket:', error);
+                jiraError = error.message;
+            }
+        }
+
+        // Build front matter with optional Jira ticket info
+        let frontMatter = `---
 title: ${title}
 date: ${date.toISOString()}
 resolved: false
 severity: ${severity || 'notice'}
-${affected && affected.length > 0 ? `affected:\n${affected.map(s => `  - ${s}`).join('\n')}` : ''}
-section: issue
+${affected && affected.length > 0 ? `affected:\n${affected.map(s => `  - ${s}`).join('\n')}` : ''}`;
+
+        if (jiraTicket) {
+            frontMatter += `\njiraTicket: ${jiraTicket.key}
+jiraUrl: ${jiraTicket.url}`;
+        }
+
+        frontMatter += `\nsection: issue
 ---
 
 *Investigating* - ${description}`;
+
+        if (jiraTicket) {
+            frontMatter += `\n\n**Jira Ticket:** [${jiraTicket.key}](${jiraTicket.url})`;
+        }
 
         fs.writeFile(filepath, frontMatter, (err) => {
             if (err) {
@@ -242,7 +283,20 @@ section: issue
             }
 
             this.rebuildSite(() => {
-                this.sendSuccess(res, { message: 'Incident created', filename });
+                const response = {
+                    message: 'Incident created',
+                    filename,
+                    jiraTicket: jiraTicket ? {
+                        key: jiraTicket.key,
+                        url: jiraTicket.url
+                    } : null
+                };
+
+                if (jiraError) {
+                    response.jiraError = jiraError;
+                }
+
+                this.sendSuccess(res, response);
             });
         });
     }
@@ -444,6 +498,20 @@ section: issue
     sendError(res, message, code = 400) {
         res.writeHead(code, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ success: false, error: message }));
+    }
+
+    getJiraConfig(res) {
+        const config = this.jira.getConfig();
+        this.sendSuccess(res, config);
+    }
+
+    async testJiraConnection(res) {
+        try {
+            const result = await this.jira.testConnection();
+            this.sendSuccess(res, result);
+        } catch (error) {
+            this.sendError(res, 'Failed to test Jira connection: ' + error.message);
+        }
     }
 }
 
