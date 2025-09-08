@@ -2,109 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://google.com/affected/</loc>
-    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
+    <loc>http://localhost:1313/affected/</loc>
+    <lastmod>2025-09-08T16:49:49+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/affected/corp-vpn/</loc>
-    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
+    <loc>http://localhost:1313/affected/corp-vpn/</loc>
+    <lastmod>2025-09-08T16:49:49+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2025-09-03-issue-notice-for-vpn/</loc>
-    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
+    <loc>http://localhost:1313/issues/2025-09-03-issue-notice-for-vpn/</loc>
+    <lastmod>2025-09-08T16:49:49+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/</loc>
-    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
+    <loc>http://localhost:1313/issues/</loc>
+    <lastmod>2025-09-08T16:49:49+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/</loc>
-    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-08T16:49:49+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/affected/bangalore/</loc>
+    <loc>http://localhost:1313/affected/bangalore/</loc>
     <lastmod>2025-09-02T16:05:28+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2025-09-02-plum-meeting-room-issue/</loc>
+    <loc>http://localhost:1313/issues/2025-09-02-plum-meeting-room-issue/</loc>
     <lastmod>2025-09-02T16:05:28+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/affected/bangalore-isp-tata-tele/</loc>
+    <loc>http://localhost:1313/affected/bangalore-isp-tata-tele/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2025-09-01-issue-notice-for-vpn/</loc>
+    <loc>http://localhost:1313/issues/2025-09-01-issue-notice-for-vpn/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2025-08-18-vpn-tekion-com-is-down/</loc>
+    <loc>http://localhost:1313/issues/2025-08-18-vpn-tekion-com-is-down/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/affected/bangalore-isp-tata-comms/</loc>
+    <loc>http://localhost:1313/affected/bangalore-isp-tata-comms/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2025-08-18-blr-6th-floor-network-down/</loc>
+    <loc>http://localhost:1313/issues/2025-08-18-blr-6th-floor-network-down/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2025-08-18-issue-notice-for-vpn/</loc>
+    <loc>http://localhost:1313/issues/2025-08-18-issue-notice-for-vpn/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/affected/api/</loc>
+    <loc>http://localhost:1313/affected/api/</loc>
     <lastmod>2025-09-01T16:44:54+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/resolved-issues/</loc>
+    <loc>http://localhost:1313/issues/resolved-issues/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/it-internal/helpdesk-status/</loc>
+    <loc>http://localhost:1313/it-internal/helpdesk-status/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/it-internal/</loc>
+    <loc>http://localhost:1313/it-internal/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/sla/network-uptime-sla/</loc>
+    <loc>http://localhost:1313/sla/network-uptime-sla/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/it-internal/maintenance-schedule/</loc>
+    <loc>http://localhost:1313/it-internal/maintenance-schedule/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/security/secinfo/</loc>
+    <loc>http://localhost:1313/security/secinfo/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/security/</loc>
+    <loc>http://localhost:1313/security/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/sla/</loc>
+    <loc>http://localhost:1313/sla/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/sla/application-performance-sla/</loc>
+    <loc>http://localhost:1313/sla/application-performance-sla/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/it-internal/sysops-monitoring/</loc>
+    <loc>http://localhost:1313/it-internal/sysops-monitoring/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/it-internal/security-updates/</loc>
+    <loc>http://localhost:1313/it-internal/security-updates/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2024-02-24-maintenance-window/</loc>
+    <loc>http://localhost:1313/issues/2024-02-24-maintenance-window/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2019-10-08-testing-new-pipeline/</loc>
+    <loc>http://localhost:1313/issues/2019-10-08-testing-new-pipeline/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/i-testing-cstate-functions/</loc>
+    <loc>http://localhost:1313/issues/i-testing-cstate-functions/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/affected/gateway/</loc>
+    <loc>http://localhost:1313/affected/gateway/</loc>
     <lastmod>2025-09-01T16:44:54+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2018-05-25-us-east-conn-issues/</loc>
+    <loc>http://localhost:1313/issues/2018-05-25-us-east-conn-issues/</loc>
     <lastmod>2025-09-01T16:44:54+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/affected/media-proxy/</loc>
+    <loc>http://localhost:1313/affected/media-proxy/</loc>
     <lastmod>2025-09-01T16:44:54+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/</loc>
+    <loc>http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/</loc>
     <lastmod>2025-09-01T16:44:54+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/issues/2018-01-17-sending-dms-impacted/</loc>
+    <loc>http://localhost:1313/issues/2018-01-17-sending-dms-impacted/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
-    <loc>https://google.com/pages/example-page/</loc>
+    <loc>http://localhost:1313/pages/example-page/</loc>
     <lastmod>2019-04-08T21:48:39+03:00</lastmod>
   </url><url>
-    <loc>https://google.com/pages/</loc>
+    <loc>http://localhost:1313/pages/</loc>
     <lastmod>2019-04-08T21:48:39+03:00</lastmod>
   </url>
 </urlset>

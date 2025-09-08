@@ -1,7 +1,7 @@
 {
   "is": "system",
   "title": "Media Proxy",
-  "permalink": "https://google.com/affected/media-proxy/",
+  "permalink": "http://localhost:1313/affected/media-proxy/",
   "status": "ok", 
   "pages": [
       {
@@ -9,7 +9,7 @@
         "title": "IPSec Connections",
         "createdAt": "2018-04-25 04:13:00 +0000 UTC",
         "lastMod": "2025-09-01 16:44:54 +0530 IST",
-        "permalink": "https://google.com/issues/2018-05-25-us-east-conn-issues/",
+        "permalink": "http://localhost:1313/issues/2018-05-25-us-east-conn-issues/",
         "severity": "fixed",
         "resolved": true,
         "informational": false,
@@ -23,7 +23,7 @@
         "title": "Unavailable Guilds & Connection Issues",
         "createdAt": "2018-04-14 15:54:00 +0000 UTC",
         "lastMod": "2025-09-01 16:44:54 +0530 IST",
-        "permalink": "https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/",
+        "permalink": "http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/",
         "severity": "down",
         "resolved": true,
         "informational": false,

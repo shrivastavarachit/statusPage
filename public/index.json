@@ -38,7 +38,7 @@
       }
     ,
       {
-        "name": "Corp Apps Services",
+        "name": "Corp Apps -",
         "description": "Check here for Operational status of Corp Apps Services.",
         "hideTitle": false,
         "closedByDefault": true
@@ -231,8 +231,8 @@
     
   ],
 
-  "buildDate": "2025-09-03",
-  "buildTime": "22:10",
+  "buildDate": "2025-09-08",
+  "buildTime": "16:54",
   "buildTimezone": "IST",
   "colorBrand": "#00D15A",
   "colorOk": "#008000",

@@ -161,7 +161,7 @@ params:
       closed: true
       untitled: false
 
-    - name: Corp Apps Services
+    - name: Corp Applications
       description: Check here for Operational status of Corp Apps Services.
       closed: true
       untitled: false

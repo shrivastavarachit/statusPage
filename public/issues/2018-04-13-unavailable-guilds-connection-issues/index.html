@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,8 +9,8 @@
     <meta name="description" content="Post-mortem
 At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by our API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way our API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Example Chat App’s real time system. These issues caused enough critical impact that Example Chat App’s engineering team was forced to fully restart the service, reconnecting millions of clients over a period of 20 minutes.">
     <title>Unavailable Guilds &amp; Connection Issues | Tekion IT Status Page</title>
-    <link rel="canonical" href="https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/">
-    <link rel="alternate" type="application/json" href="https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/index.json" title="Tekion IT Status Page" />
+    <link rel="canonical" href="http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/">
+    <link rel="alternate" type="application/json" href="http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/index.json" title="Tekion IT Status Page" />
     <meta name="generator" content="cState v6.0.1 - https://github.com/cstate/cstate">
     <meta name="theme-color" content="#00D15A">
     <script>
@@ -470,7 +470,7 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
   <body class="issues single">
     <div class="contain">
-      <a href="https://google.com/">← Go back to <em>Tekion IT Status Page</em></a>
+      <a href="http://localhost:1313/">← Go back to <em>Tekion IT Status Page</em></a>
     </div>
 
     <div class="contain">
@@ -699,7 +699,7 @@ We&rsquo;re aware of users experiencing unavailable guilds and issues when attem
           ⚡
           Subscribe via RSS —
           
-            <a href="https://google.com/index.xml" class="no-underline">to all updates</a>
+            <a href="http://localhost:1313/index.xml" class="no-underline">to all updates</a>
           
           
           
