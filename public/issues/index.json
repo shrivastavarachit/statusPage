@@ -6,9 +6,23 @@
   "pages": [
       {
         "is": "issue",
+        "title": "Issue Notice for VPN",
+        "createdAt": "2025-09-03 16:39:46.2 +0000 UTC",
+        "lastMod": "2025-09-03 16:39:46.2 +0000 UTC",
+        "permalink": "https://google.com/issues/2025-09-03-issue-notice-for-vpn/",
+        "severity": "notice",
+        "resolved": true,
+        "informational": false,
+        "resolvedAt": "2025-09-03T16:40:26.902Z",
+        "affected": ["Corp VPN"],
+        "filename": "2025-09-03-issue-notice-for-vpn.md"
+      }
+    ,
+      {
+        "is": "issue",
         "title": "Plum meeting room issue",
         "createdAt": "2025-09-02 07:37:33.4 +0000 UTC",
-        "lastMod": "2025-09-02 07:37:33.4 +0000 UTC",
+        "lastMod": "2025-09-02 16:05:28 +0530 IST",
         "permalink": "https://google.com/issues/2025-09-02-plum-meeting-room-issue/",
         "severity": "notice",
         "resolved": true,

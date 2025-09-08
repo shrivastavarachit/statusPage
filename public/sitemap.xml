@@ -3,27 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://google.com/affected/</loc>
-    <lastmod>2025-09-02T07:37:33+00:00</lastmod>
+    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
   </url><url>
-    <loc>https://google.com/affected/bangalore/</loc>
-    <lastmod>2025-09-02T07:37:33+00:00</lastmod>
+    <loc>https://google.com/affected/corp-vpn/</loc>
+    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
+  </url><url>
+    <loc>https://google.com/issues/2025-09-03-issue-notice-for-vpn/</loc>
+    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
   </url><url>
     <loc>https://google.com/issues/</loc>
-    <lastmod>2025-09-02T07:37:33+00:00</lastmod>
-  </url><url>
-    <loc>https://google.com/issues/2025-09-02-plum-meeting-room-issue/</loc>
-    <lastmod>2025-09-02T07:37:33+00:00</lastmod>
+    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
   </url><url>
     <loc>https://google.com/</loc>
-    <lastmod>2025-09-02T07:37:33+00:00</lastmod>
+    <lastmod>2025-09-03T16:39:46+00:00</lastmod>
+  </url><url>
+    <loc>https://google.com/affected/bangalore/</loc>
+    <lastmod>2025-09-02T16:05:28+05:30</lastmod>
+  </url><url>
+    <loc>https://google.com/issues/2025-09-02-plum-meeting-room-issue/</loc>
+    <lastmod>2025-09-02T16:05:28+05:30</lastmod>
   </url><url>
     <loc>https://google.com/affected/bangalore-isp-tata-tele/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
     <loc>https://google.com/issues/2025-09-01-issue-notice-for-vpn/</loc>
-    <lastmod>2025-09-01T15:44:55+05:30</lastmod>
-  </url><url>
-    <loc>https://google.com/affected/corp-vpn/</loc>
     <lastmod>2025-09-01T15:44:55+05:30</lastmod>
   </url><url>
     <loc>https://google.com/issues/2025-08-18-vpn-tekion-com-is-down/</loc>

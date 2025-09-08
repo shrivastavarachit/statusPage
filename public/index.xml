@@ -3,24 +3,34 @@
     <channel>
       
       <title>Tekion IT Status Page</title>
-      <link>https://google.com/</link>
+      <link>http://localhost:1313/</link>
       <description>Incident history</description>
       <generator>github.com/cstate</generator>
       <language>en</language>
       
-      <lastBuildDate>Tue, 02 Sep 2025 07:37:33 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 03 Sep 2025 16:39:46 +0000</lastBuildDate>
       
       
       
-        <atom:link href="https://google.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
       
       
       
         <item>
+          <title>[Resolved] Issue Notice for VPN</title>
+          <link>http://localhost:1313/issues/2025-09-03-issue-notice-for-vpn/</link>
+          <pubDate>Wed, 03 Sep 2025 16:39:46 +0000</pubDate>
+          <guid>http://localhost:1313/issues/2025-09-03-issue-notice-for-vpn/</guid>
+          <category>2025-09-03T16:40:26.902Z</category>
+          <description>&lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - its down&lt;/p&gt;
+</description>
+        </item>
+      
+        <item>
           <title>[Resolved] Plum meeting room issue</title>
-          <link>https://google.com/issues/2025-09-02-plum-meeting-room-issue/</link>
+          <link>http://localhost:1313/issues/2025-09-02-plum-meeting-room-issue/</link>
           <pubDate>Tue, 02 Sep 2025 07:37:33 +0000</pubDate>
-          <guid>https://google.com/issues/2025-09-02-plum-meeting-room-issue/</guid>
+          <guid>http://localhost:1313/issues/2025-09-02-plum-meeting-room-issue/</guid>
           <category>2025-09-02T10:33:52.085Z</category>
           <description>&lt;p&gt;&lt;em&gt;9/2/2025&lt;/em&gt; - Maintenance is still going onn new ETA 1700 hrs&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;9/2/2025&lt;/em&gt; - Update - 2 cables are being replaced&lt;/p&gt;
@@ -32,9 +42,9 @@
       
         <item>
           <title>[Resolved] Issue Notice for VPN</title>
-          <link>https://google.com/issues/2025-09-01-issue-notice-for-vpn/</link>
+          <link>http://localhost:1313/issues/2025-09-01-issue-notice-for-vpn/</link>
           <pubDate>Mon, 01 Sep 2025 10:06:13 +0000</pubDate>
-          <guid>https://google.com/issues/2025-09-01-issue-notice-for-vpn/</guid>
+          <guid>http://localhost:1313/issues/2025-09-01-issue-notice-for-vpn/</guid>
           <category>2025-09-01T10:06:22.634Z</category>
           <description>&lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - we&lt;/p&gt;
 </description>
@@ -42,9 +52,9 @@
       
         <item>
           <title>[Resolved] vpn.tekion.com is down</title>
-          <link>https://google.com/issues/2025-08-18-vpn-tekion-com-is-down/</link>
+          <link>http://localhost:1313/issues/2025-08-18-vpn-tekion-com-is-down/</link>
           <pubDate>Mon, 18 Aug 2025 11:21:33 +0000</pubDate>
-          <guid>https://google.com/issues/2025-08-18-vpn-tekion-com-is-down/</guid>
+          <guid>http://localhost:1313/issues/2025-08-18-vpn-tekion-com-is-down/</guid>
           <category>2025-08-18T14:41:47.080Z</category>
           <description>&lt;p&gt;&lt;em&gt;8/18/2025&lt;/em&gt; - ETA 2hrs from 18:00&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - Firewall went down, working on the failover&lt;/p&gt;
@@ -53,9 +63,9 @@
       
         <item>
           <title>[Resolved] BLR 6th floor network down</title>
-          <link>https://google.com/issues/2025-08-18-blr-6th-floor-network-down/</link>
+          <link>http://localhost:1313/issues/2025-08-18-blr-6th-floor-network-down/</link>
           <pubDate>Mon, 18 Aug 2025 11:20:42 +0000</pubDate>
-          <guid>https://google.com/issues/2025-08-18-blr-6th-floor-network-down/</guid>
+          <guid>http://localhost:1313/issues/2025-08-18-blr-6th-floor-network-down/</guid>
           <category>2025-08-18T11:21:03.686Z</category>
           <description>&lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - Working on a bad switch which caused issue&lt;/p&gt;
 </description>
@@ -63,9 +73,9 @@
       
         <item>
           <title>[Resolved] Issue Notice for VPN</title>
-          <link>https://google.com/issues/2025-08-18-issue-notice-for-vpn/</link>
+          <link>http://localhost:1313/issues/2025-08-18-issue-notice-for-vpn/</link>
           <pubDate>Mon, 18 Aug 2025 10:00:22 +0000</pubDate>
-          <guid>https://google.com/issues/2025-08-18-issue-notice-for-vpn/</guid>
+          <guid>http://localhost:1313/issues/2025-08-18-issue-notice-for-vpn/</guid>
           <category></category>
           <description>&lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - down&lt;/p&gt;
 </description>
@@ -73,9 +83,9 @@
       
         <item>
           <title>[Resolved] Resolved issues</title>
-          <link>https://google.com/issues/resolved-issues/</link>
+          <link>http://localhost:1313/issues/resolved-issues/</link>
           <pubDate>Tue, 17 Dec 2024 17:24:00 +0000</pubDate>
-          <guid>https://google.com/issues/resolved-issues/</guid>
+          <guid>http://localhost:1313/issues/resolved-issues/</guid>
           <category>2024-12-17 17:42:00</category>
           <description>&lt;p&gt;&lt;em&gt;Update&lt;/em&gt; - This incident has been resolved.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - We&amp;rsquo;re aware of an issue affecting sending DMs and viewing online friends. We&amp;rsquo;re online and working on a resolution.&lt;/p&gt;
@@ -84,9 +94,9 @@
       
         <item>
           <title>Tekion IT Maintenance Announcement</title>
-          <link>https://google.com/issues/2024-02-24-maintenance-window/</link>
+          <link>http://localhost:1313/issues/2024-02-24-maintenance-window/</link>
           <pubDate>Sat, 24 Feb 2024 10:35:00 +0000</pubDate>
-          <guid>https://google.com/issues/2024-02-24-maintenance-window/</guid>
+          <guid>http://localhost:1313/issues/2024-02-24-maintenance-window/</guid>
           <category></category>
           <description>&lt;p&gt;No planned IT maintenance - follow general slack channels or IT Notices email for updates&lt;/p&gt;
 </description>
@@ -94,18 +104,18 @@
       
         <item>
           <title>[Resolved] New Implementations</title>
-          <link>https://google.com/issues/2019-10-08-testing-new-pipeline/</link>
+          <link>http://localhost:1313/issues/2019-10-08-testing-new-pipeline/</link>
           <pubDate>Sat, 05 Oct 2019 16:24:00 +0000</pubDate>
-          <guid>https://google.com/issues/2019-10-08-testing-new-pipeline/</guid>
+          <guid>http://localhost:1313/issues/2019-10-08-testing-new-pipeline/</guid>
           <category>2019-10-05 16:58:00</category>
           <description></description>
         </item>
       
         <item>
           <title>Security Incidents</title>
-          <link>https://google.com/issues/i-testing-cstate-functions/</link>
+          <link>http://localhost:1313/issues/i-testing-cstate-functions/</link>
           <pubDate>Fri, 04 Oct 2019 18:05:00 +0000</pubDate>
-          <guid>https://google.com/issues/i-testing-cstate-functions/</guid>
+          <guid>http://localhost:1313/issues/i-testing-cstate-functions/</guid>
           <category></category>
           <description>&lt;p&gt;There is a new feature in cState version 4 that lets you make what are called &lt;em&gt;informational&lt;/em&gt; posts. The main difference is that there will be no &lt;em&gt;Unresolved&lt;/em&gt; or &lt;em&gt;Resolved in under a minute&lt;/em&gt; text on the pages.&lt;/p&gt;
 &lt;p&gt;This is essentially a page with a date and title that shows up in the incident history.&lt;/p&gt;
@@ -114,9 +124,9 @@
       
         <item>
           <title>[Resolved] IPSec Connections</title>
-          <link>https://google.com/issues/2018-05-25-us-east-conn-issues/</link>
+          <link>http://localhost:1313/issues/2018-05-25-us-east-conn-issues/</link>
           <pubDate>Wed, 25 Apr 2018 04:13:00 +0000</pubDate>
-          <guid>https://google.com/issues/2018-05-25-us-east-conn-issues/</guid>
+          <guid>http://localhost:1313/issues/2018-05-25-us-east-conn-issues/</guid>
           <category>2018-04-25 04:13:59</category>
           <description>&lt;p&gt;&lt;strong&gt;Resolved&lt;/strong&gt; - &lt;em&gt;2018-05-25 05:54:00&lt;/em&gt;
 We believe all users experiencing issues have been able to connect at this time.&lt;/p&gt;
@@ -129,9 +139,9 @@ We&amp;rsquo;re aware of reports that users are experiencing connection issues o
       
         <item>
           <title>[Resolved] Unavailable Guilds &amp; Connection Issues</title>
-          <link>https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/</link>
+          <link>http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/</link>
           <pubDate>Sat, 14 Apr 2018 15:54:00 +0000</pubDate>
-          <guid>https://google.com/issues/2018-04-13-unavailable-guilds-connection-issues/</guid>
+          <guid>http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/</guid>
           <category>2018-04-13 17:30:00</category>
           <description>&lt;p&gt;&lt;em&gt;Post-mortem&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by our API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way our API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Example Chat App’s real time system. These issues caused enough critical impact that Example Chat App’s engineering team was forced to fully restart the service, reconnecting millions of clients over a period of 20 minutes.&lt;/p&gt;
@@ -147,9 +157,9 @@ We&amp;rsquo;re aware of users experiencing unavailable guilds and issues when a
       
         <item>
           <title>[Resolved] Issues Sending DMs</title>
-          <link>https://google.com/issues/2018-01-17-sending-dms-impacted/</link>
+          <link>http://localhost:1313/issues/2018-01-17-sending-dms-impacted/</link>
           <pubDate>Sun, 17 Dec 2017 17:24:00 +0000</pubDate>
-          <guid>https://google.com/issues/2018-01-17-sending-dms-impacted/</guid>
+          <guid>http://localhost:1313/issues/2018-01-17-sending-dms-impacted/</guid>
           <category>2017-12-17 17:58:00</category>
           <description>&lt;p&gt;&lt;em&gt;Update&lt;/em&gt; - This incident has been resolved.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - We&amp;rsquo;re aware of an issue affecting sending DMs and viewing online friends. We&amp;rsquo;re online and working on a resolution.&lt;/p&gt;

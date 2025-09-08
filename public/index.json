@@ -5,7 +5,7 @@
   "title": "Tekion IT Status Page",
   "languageCodeHTML": "en",
   "languageCode": "en",
-  "baseURL": "https://google.com/",
+  "baseURL": "http://localhost:1313/",
   "description": "We are Tekion IT, continuously monitoring all our systems Globally.",
   "summaryStatus": "ok",
   "categories": [
@@ -53,7 +53,7 @@
         "title": "Tekion IT Maintenance Announcement",
         "createdAt": "2024-02-24 10:35:00 +0000 UTC",
         "lastMod": "2025-09-01 15:44:55 +0530 IST",
-        "permalink": "https://google.com/issues/2024-02-24-maintenance-window/",
+        "permalink": "http://localhost:1313/issues/2024-02-24-maintenance-window/",
         "affected": [],
         "filename": "2024-02-24-maintenance-window.md"
       }
@@ -231,8 +231,8 @@
     
   ],
 
-  "buildDate": "2025-09-02",
-  "buildTime": "16:04",
+  "buildDate": "2025-09-03",
+  "buildTime": "22:10",
   "buildTimezone": "IST",
   "colorBrand": "#00D15A",
   "colorOk": "#008000",
@@ -240,6 +240,6 @@
   "colorDown": "#e60000",
   "colorNotice": "#24478f",
   "alwaysKeepBrandColor": "true",
-  "logo": "https://google.com/tekionlogo.png",
+  "logo": "http://localhost:1313/tekionlogo.png",
   "googleAnalytics": "UA-00000000-1"
 }
