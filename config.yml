@@ -220,13 +220,13 @@ params:
 
     - name: Jira
       description: The guts of the application.
-      category: Corp Apps Services
+      category: Corp Applications
     - name: Confluence
       description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Corp Apps Services
+      category: Corp Applications
     - name: Gateway
       description: Gateway service for handling connections.
-      category: Corp Apps Services
+      category: Corp Applications
 
     
 
