@@ -161,7 +161,7 @@ params:
       closed: true
       untitled: false
 
-    - name: Corp Applications
+    - name: Corp Apps Services
       description: Check here for Operational status of Corp Apps Services.
       closed: true
       untitled: false
@@ -220,13 +220,13 @@ params:
 
     - name: Jira
       description: The guts of the application.
-      category: Corp Applications
+      category: Corp Apps Services
     - name: Confluence
       description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Corp Applications
+      category: Corp Apps Services
     - name: Gateway
       description: Gateway service for handling connections.
-      category: Corp Applications
+      category: Corp Apps Services
 
     
 
